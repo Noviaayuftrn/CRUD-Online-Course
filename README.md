@@ -31,10 +31,9 @@ Online Course Management System adalah aplikasi berbasis web yang dikembangkan m
 
 - Halaman Edit Kursus
   ![Screenshot 2024-08-11 113315](https://github.com/user-attachments/assets/659435ff-3164-44ca-9a50-6f2f4496946e)
-![Screenshot 2024-08-11 113344](https://github.com/user-attachments/assets/1b785a4f-8523-4013-b860-7a2681f76207)
 
 - Halaman Hapus Kursus
-    
+  ![Screenshot 2024-08-11 113344](https://github.com/user-attachments/assets/1b785a4f-8523-4013-b860-7a2681f76207)
 
 ### Halaman Materi
 
