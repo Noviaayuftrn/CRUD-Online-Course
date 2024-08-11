@@ -1,58 +1,101 @@
+# Online Course Management System
 
-## About Laravel
+## Deskripsi
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Online Course Management System adalah aplikasi berbasis web yang dikembangkan menggunakan Laravel. Aplikasi ini memungkinkan pengguna untuk mengelola kursus dan materi dengan fitur CRUD (Create, Read, Update, Delete). Pengguna dapat menambahkan, mengedit, dan menghapus kursus serta materi, serta melihat daftar kursus dan materi yang tersedia.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Fitur
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Kursus:
 
-## Learning Laravel
+- Menambah kursus baru
+- Melihat daftar kursus
+- Mengedit informasi kursus
+- Menghapus kursus
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Materi:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Menambahkan materi ke dalam kursus
+- Melihat daftar materi dalam kursus
+- Mengedit informasi materi
+- Menghapus materi
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Gambar Tampilan
 
-## Laravel Sponsors
+### Halaman Kursus
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Halaman Tambah Kursus
+- Halaman Edit Kursus
+- Halaman Hapus Kursus
 
-### Premium Partners
+### Halaman Materi
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- Halaman Tambah Materi
+- Halaman Edit Materi
+- Halaman Hapus Materi
 
-## Contributing
+## Prerequisites
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Sebelum menjalankan aplikasi ini, pastikan bahwa Anda memiliki:
 
-## Code of Conduct
+- PHP >= 8.0
+- Composer
+- Laravel >= 9.0
+- MySQL atau database lain yang didukung
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Instalasi
 
-## Security Vulnerabilities
+1. Clone Repository:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    ```bash
+    git clone https://github.com/username/repository.git
+    ```
 
-## License
+2. Masuk ke Direktori Proyek:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    ```bash
+    cd repository
+    ```
+
+3. Instal Dependensi:
+
+    ```bash
+    composer install
+    ```
+
+4. Konfigurasi Environment: Salin file `.env.example` ke `.env` dan sesuaikan konfigurasi database dan lainnya:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+5. Generate Key:
+
+    ```bash
+    php artisan key:generate
+    ```
+
+6. Migrasi Database:
+
+    ```bash
+    php artisan migrate
+    ```
+
+7. Jalankan Aplikasi:
+
+    ```bash
+    php artisan serve
+    ```
+
+   Akses aplikasi melalui `http://localhost:8000`.
+
+## Penggunaan
+
+- **Login**: Akses halaman login bisa melalui `/login` atau `localhost:8000`.
+- **Dashboard**: Setelah login, akses dashboard di `/dashboard` untuk melihat dan mengelola kursus.
+- **Tambah Kursus**: Klik tombol "Tambah Kursus" untuk menambahkan kursus baru.
+- **Kelola Materi**: Pilih kursus dan klik "Lihat Materi" untuk mengelola materi dalam kursus tersebut.
+
+## Lisensi
+
+The Laravel framework is open-sourced software licensed under the MIT license.
